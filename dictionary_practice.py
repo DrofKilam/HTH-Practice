@@ -65,11 +65,34 @@ del groceries["eggs"]
 del groceries["bacon"]
 print(groceries)
 
-del wowmounts["warbear"]
-del wowmounts["drake"]
-print(wowmounts)
+
 
 del shoe_inv["Jordan 11"]
 del shoe_inv["Pumas"]
 print(shoe_inv)
 
+def total_price (x, y) :
+    summ = x+y
+    return summ
+print (total_price (groceries["beef"], groceries["cheese"]))
+
+
+def price_diff (x, y) :
+    difference = x-y
+    return ' the price difference is ', difference 
+print (price_diff (groceries["beef"], groceries["cheese"]))
+
+def triple_stock (x,y) :
+    triple = x*y
+    return triple
+print (triple_stock (shoe_inv["Foamposite"], 3))
+
+def half_stock (x,y) :
+    half = x/y
+    return half
+print (half_stock (shoe_inv["Foamposite"], 2))
+
+def highest_level (x,y,z) : 
+    highest = max(x,y,z)
+    return highest
+print (highest_level (wowmounts["raptor"], wowmounts["warbear"], wowmounts["drake"]))
